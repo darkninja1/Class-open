@@ -37,7 +37,7 @@ function openmeeven() {
   else if (currentTime == '10:15:00AM') {
     english();
   }
-  else if (currentTime == '12:30:00PM') {
+  else if (currentTime == '12:30:00AM') {
     science();
   }
   else if (currentTime == '01:40:00PM') {

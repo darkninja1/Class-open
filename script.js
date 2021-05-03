@@ -75,7 +75,7 @@ function openmeodd() {
   else if (currentTime == '10:15:00AM') {
     band();
   }
-  else if (currentTime == '12:30:00PM') {
+  else if (currentTime == '12:30:00AM') {
     history();
   }
   else if (currentTime == '01:40:00PM') {
