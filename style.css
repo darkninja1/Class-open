@@ -1,0 +1,38 @@
+body {
+  background-color:black;
+  color:green;
+}
+#clock { 
+  font-size: 175px; 
+  width: 900px; 
+  margin: 200px; 
+  text-align: center; 
+  border: 2px solid green; 
+  border-radius: 20px; 
+} 
+.red {
+  background-color:black;
+  color:red;
+  border:1px solid red;
+  box-shadow:0px 0px 10px 2px red;
+  width:90px;
+  height:30px;
+}
+.red:hover {
+  color:black;
+  background-color:red;
+  cursor:pointer;
+}
+.blue {
+  background-color:black;
+  color:blue;
+  border:1px solid blue;
+  box-shadow:0px 0px 10px 2px blue;
+  width:90px;
+  height:30px;
+}
+.blue:hover {
+  color:black;
+  background-color:blue;
+  cursor:pointer;
+}
