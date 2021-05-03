@@ -7,9 +7,10 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body><div id="day">day</div>
-    <div id="clock">8:10:45</div>
-    <button class='red' type="button" onclick="openmeodd()">Odd Day</button>
-    <button class='blue' type="button" onclick="openmeeven()">Even Day</button>
+    <div id="clock">--:--:-- --</div>
+    <button class='red' type="button" onclick="setInterval(showTime, 1000);">Odd Day</button>
+    <button class='blue' type="button" onclick="setInterval(showTime2, 1000);">Even Day</button>
     <script src="script.js"></script>
+    <script src="even.js"></script>
   </body>
 </html>

@@ -1,5 +1,4 @@
-
-function showTime() { 
+function showTime2() { 
     let time = new Date(); 
     let hour = time.getHours(); 
     let min = time.getMinutes(); 
@@ -26,11 +25,26 @@ function showTime() {
   
     document.getElementById("clock") 
             .innerHTML = currentTime; 
-    openmeodd();        
+    openmeeven();      
 } 
-
-//showTime();
-
+function openmeeven() {
+  document.getElementById("day") 
+            .innerHTML = "even day";
+  //while (hi == 0) {
+  if (currentTime == '09:00:00AM') {
+    french();
+  }
+  else if (currentTime == '10:15:00AM') {
+    english();
+  }
+  else if (currentTime == '12:30:00PM') {
+    science();
+  }
+  else if (currentTime == '01:40:00PM') {
+    health();
+  }
+  //}
+}
 function math() {
   window.open("https://mcpsmd.zoom.us/j/98377294250?pwd=YUk3bjBpOGFGNzNHT1Nza0ZzQ0crZz09");
 }
@@ -65,27 +79,5 @@ function health() {
 function test() {
   window.open("https://leproductions.leproductions.repl.co/");
 } 
-var hi = 0
-function openmeodd() {
-  document.getElementById("day") 
-            .innerHTML = "odd day"; 
-  if (currentTime == '09:00:00AM') {
-    math();
-  }
-  else if (currentTime == '10:15:00AM') {
-    band();
-  }
-  else if (currentTime == '12:30:00PM') {
-    history();
-  }
-  else if (currentTime == '01:40:00PM') {
-    mun();
-  }
-  else if (currentTime == '11:07:40AM') {
-    test();
-  }
-}
-
-
-//setInterval(showTime, 1000);
- 
+//showTime2();
+//setInterval(showTime2, 1000); 
