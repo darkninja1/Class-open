@@ -12,28 +12,34 @@ body {
 } 
 .red {
   background-color:black;
-  color:red;
-  border:1px solid red;
-  box-shadow:0px 0px 10px 2px red;
+  color:rgb(0, 255, 179);
+  border:1px solid rgb(0, 255, 179);
+  box-shadow:0px 0px 20px 2px rgb(0, 255, 179);
   padding:10px 20px 10px 20px;
   font-size:35px;
+  margin:20px;
+  transition: 0.5s linear;
+  outline:none;
 }
 .red:hover {
   color:black;
-  background-color:red;
+  background-color:rgb(0, 255, 179);
   cursor:pointer;
 }
 .blue {
   background-color:black;
-  color:blue;
-  border:1px solid blue;
-  box-shadow:0px 0px 10px 2px blue;
+  color:rgb(46, 192, 136);
+  border:1px solid rgb(46, 192, 136);
+  box-shadow:0px 0px 20px 2px rgb(46, 192, 136);
   padding:10px 20px 10px 20px;
   font-size:35px;
+  margin:20px;
+  transition: 0.5s linear;
+  outline:none;
 }
 .blue:hover {
   color:black;
-  background-color:blue;
+  background-color:rgb(46, 192, 136);
   cursor:pointer;
 }
 #day {
