@@ -59,6 +59,8 @@ function health() {
 }       
 var hi = 0
 function openmeodd() {
+  document.getElementById("day") 
+            .innerHTML = "odd day"; 
   while (hi == 0) {
     if (currentTime == '09:00:00AM') {
       math();
@@ -75,6 +77,8 @@ function openmeodd() {
   }
 }
 function openmeeven() {
+  document.getElementById("day") 
+            .innerHTML = "even day";
   while (hi == 0) {
     if (currentTime == '09:00:00AM') {
       french();

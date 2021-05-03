@@ -36,3 +36,10 @@ body {
   background-color:blue;
   cursor:pointer;
 }
+#day {
+  color:green;
+  position: relative;
+  top:0px;
+  left:0px;
+  margin:20px;
+}
