@@ -68,7 +68,7 @@ function test() {
 var hi = 0
 function openmeodd() {
   document.getElementById("day") 
-            .innerHTML = "odd day"; 
+            .innerHTML = "Odd Day"; 
   if (currentTime == '09:00:00AM') {
     math();
   }

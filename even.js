@@ -29,7 +29,7 @@ function showTime2() {
 } 
 function openmeeven() {
   document.getElementById("day") 
-            .innerHTML = "even day";
+            .innerHTML = "Even Day";
   //while (hi == 0) {
   if (currentTime == '09:00:00AM') {
     french();
