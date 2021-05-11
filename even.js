@@ -74,7 +74,7 @@ function mun() {
 }
 
 function health() {
-  window.open("https://mcpsmd.zoom.us/j/8957556274?pwd=M05GaVJwV0EvTTFpRmdPNENuRVlZQT09");
+  window.open("https://mcpsmd.zoom.us/j/87599127790?pwd=eU5CSUhrQjg3M2l4ZE9Zb0ZoNWNFZz09");
 }       
 function test() {
   window.open("https://leproductions.leproductions.repl.co/");
