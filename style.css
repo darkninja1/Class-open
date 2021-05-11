@@ -56,3 +56,13 @@ body {
   outline:none;
   border:1px solid green;
 }
+@media screen and (max-width: 600px) {
+  #clock {
+    font-size: 75px; 
+    width: auto; 
+    margin: 20px; 
+    text-align: center; 
+     
+    
+}
+}
