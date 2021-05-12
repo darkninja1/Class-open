@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width">
     <title>Class Opener</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="download.png" />
   </head>
-  <body onload="dayw()"><button id="day">---</button>
+  <body onload="dayw()">
+    <div class="dropdown">
+    <button onclick="myFunction123()" class="dropbtn" id="day">---</button>
+    <div id="myDropdown" class="dropdown-content">
+    <a onclick="odd_day()">Odd</a>
+    <a onclick="even_day()">Even</a>
+    </div>
+    </div>
     <div id="clock">--:--:-- --</div>
     <!--
     <button class='red' type="button" onclick="setInterval(showTime, 1000);">Odd Day</button>
