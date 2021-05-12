@@ -51,3 +51,37 @@ window.onclick = function(event) {
     }
   }
 }
+function pd1() {
+  window.open("https://mcpsmd.zoom.us/j/98377294250?pwd=YUk3bjBpOGFGNzNHT1Nza0ZzQ0crZz09");
+}
+
+function pd2() {
+  window.open("https://mcpsmd.zoom.us/j/81296576596?pwd=NVFiUGFEa21SY0k0bVNESkhpeVUvQT09");
+}
+
+function pd3() {
+  window.open("https://mcpsmd.zoom.us/j/4011189628?pwd=MUNBZEhSekpLOEZUR00xSXV0ZFBmdz09");
+}
+
+function pd4() {
+  window.open("https://mcpsmd.zoom.us/j/9201705617?pwd=VHU4bkFSZWFNb3MwR3MzbUZ2YU5adz09");
+}
+
+function pd5() {
+  window.open("https://mcpsmd.zoom.us/j/93664712547?pwd=bGxuSDFoOC8zRFdvWFZ3bVVDQkxMZz09");
+}
+
+function pd6() {
+  window.open("https://mcpsmd.zoom.us/j/93071692932?pwd=Skxzdi9wdkU4eXB6SjZ0WlIzT0pHZz09");
+}
+
+function pd7() {
+  window.open("https://mcpsmd.zoom.us/j/97202594090?pwd=RHpGRjVSV0tYNDlFVG05VDl0QVMwUT09");
+}
+
+function pd8() {
+  window.open("https://mcpsmd.zoom.us/j/8957556274?pwd=M05GaVJwV0EvTTFpRmdPNENuRVlZQT09");
+}       
+function test() {
+  window.open("https://leproductions.leproductions.repl.co/");
+} 
