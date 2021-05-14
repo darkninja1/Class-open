@@ -1,8 +1,21 @@
 function dayw() {
+  var nschool = ['1/1','12/24','12/25'];
+  var halfday = [];
   var d = new Date();
-  var n = d.getDay()
-  if (n == 0) {
+  var n = d.getDay();
+  var day = d.getDate();
+  var month = d.getMonth();
+  month = month + 1;
+  var date = (month+"/"+day);
+  document.getElementById("day2").innerHTML = date; 
+
+  if (date in nschool) {
     alert("no school today");
+    document.getElementById("day").innerHTML = "No School";
+  }
+  else if (n == 0) {
+    alert("no school today");
+    document.getElementById("day").innerHTML = "No School"; 
   }
   else if (n == 1) {
     setInterval(showTime, 1000);
@@ -12,6 +25,7 @@ function dayw() {
   }
   else if (n == 3) {
     alert("no school today");
+    document.getElementById("day").innerHTML = "No School"; 
   }
   else if (n == 4) {
     setInterval(showTime, 1000);
@@ -21,6 +35,7 @@ function dayw() {
   }
   else if (n == 6) {
     alert("no school today");
+    document.getElementById("day").innerHTML = "No School"; 
   }
 
 }

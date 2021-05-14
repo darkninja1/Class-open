@@ -57,7 +57,20 @@ body {
   border:1px solid green;
   cursor:pointer;
 }
-@media screen and (max-width: 600px) {
+#day2 {
+  color:green;
+  position: relative;
+  top:0px;
+  right:0px;
+  margin:20px;
+  font-size:20px;
+  padding:10px;
+  background-color:rgb(22, 22, 22);
+  outline:none;
+  border:1px solid green;
+  cursor:pointer;
+}
+@media screen and (max-width: 1200px) {
   #clock {
     font-size: 75px; 
     width: auto; 
@@ -93,3 +106,6 @@ body {
 .dropdown a:hover {background-color: rgb(196, 196, 196);}
 
 .show {display: block;}
+.extra {
+  border:1px solid black;
+}
