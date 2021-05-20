@@ -1,10 +1,16 @@
 function showTime2() { 
+    let time2 = new Date(); 
+    let hour2 = time2.getHours(); 
+    let min2 = time2.getMinutes();
     let time = new Date(); 
     let hour = time.getHours(); 
     let min = time.getMinutes(); 
     let sec = time.getSeconds(); 
     am_pm = "AM"; 
-  
+    var timy1 = hour2.toString();
+    var timy2 = min2.toString();
+    var timy3 = timy1 + timy2;
+    var timy4 = parseInt(timy3);
     if (hour > 12) { 
         hour -= 12; 
         am_pm = "PM"; 
@@ -13,6 +19,27 @@ function showTime2() {
         hr = 12; 
         am_pm = "AM"; 
     } 
+    if (timy4 <= 815) {
+      document.getElementById('day3').innerHTML = 'Next: Jag Live';
+    }
+    else if (timy4 <= 900) {
+      document.getElementById('day3').innerHTML = 'Next: Pd.2';
+    }
+    else if (timy4 <= 1015) {
+      document.getElementById('day3').innerHTML = 'Next: Pd.4';
+    }
+    else if (timy4 <= 1230) {
+      document.getElementById('day3').innerHTML = 'Next: Pd.6';
+    }
+    else if (timy4 <= 140) {
+      document.getElementById('day3').innerHTML = 'Next: Pd.8';
+    }
+    else if (timy4 <= 240) {
+      document.getElementById('day3').innerHTML = 'Next: End of School';
+    }
+    else{
+      document.getElementById('day3').innerHTML = 'Next: ---';
+    }
   
     hour = hour < 10 ? "0" + hour : hour; 
     min = min < 10 ? "0" + min : min; 
