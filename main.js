@@ -1,12 +1,19 @@
 function dayw() {
   var nschool = ['1/1','12/24','12/25'];
   var halfday = [];
+  var wd = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var mn = [ "January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December" ];
   var d = new Date();
   var n = d.getDay();
   var day = d.getDate();
-  var month = d.getMonth();
-  month = month + 1;
-  var date = (month+"/"+day);
+  var month2 = d.getMonth();
+  var year = d.getFullYear();
+  var day = d.getDay();
+  var wd2 = wd[day];
+  var month = mn[month2];
+  //month = month + 1;
+  var date = (wd2+", "+month+" "+day+" "+year);
   document.getElementById("day2").innerHTML = date; 
 
   if (date in nschool) {
