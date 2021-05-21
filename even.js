@@ -69,6 +69,7 @@ function openmeeven() {
     pd2();
   }
   else if (currentTime == '10:00:00AM') {
+    superstop()
     kenshin_1();
   }
   else if (currentTime == '10:10:00AM') {
@@ -87,6 +88,7 @@ function openmeeven() {
     pd6();
   }
   else if (currentTime == '10:00:00AM') {
+    superstop()
     kenshin_1();
   }
   else if (currentTime == '01:35:00PM') {

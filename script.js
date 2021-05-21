@@ -109,6 +109,7 @@ function openmeodd() {
     pd1();
   }
   else if (currentTime == '10:00:00AM') {
+    superstop()
     kenshin_1();
   }
   else if (currentTime == '10:10:00AM') {
@@ -127,6 +128,7 @@ function openmeodd() {
     pd5();
   }
   else if (currentTime == '10:00:00AM') {
+    superstop()
     kenshin_1();
   }
   else if (currentTime == '01:35:00PM') {

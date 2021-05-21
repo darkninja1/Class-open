@@ -1,7 +1,15 @@
 var x = document.getElementById("music");
 var x2 = document.getElementById("music2");
+var x3 = document.getElementById("music3");
+var x4 = document.getElementById("music4");
 function kenshin_1() {
   x.play();
+}
+function slime() {
+  x3.play();
+}
+function avatar() {
+  x4.play();
 }
 
 function pauseAudio() {
@@ -20,6 +28,8 @@ function setFullVolume() {
 function superstop() {
   x.pause();
   x2.pause();
+  x3.pause();
+  x4.pause();
 }
 
 function dayw() {
