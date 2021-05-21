@@ -29,13 +29,16 @@ function showTime() {
     else if (timy4 <= 1015) {
       document.getElementById('day3').innerHTML = 'Next: Pd.3';
     }
+    else if (timy4 <= 1115) {
+      document.getElementById('day3').innerHTML = 'Next: Lunch';
+    }
     else if (timy4 <= 1230) {
       document.getElementById('day3').innerHTML = 'Next: Pd.5';
     }
-    else if (timy4 <= 140) {
+    else if (timy4 <= 1340) {
       document.getElementById('day3').innerHTML = 'Next: Pd.7';
     }
-    else if (timy4 <= 240) {
+    else if (timy4 <= 1440) {
       document.getElementById('day3').innerHTML = 'Next: End of School';
     }
     else{
