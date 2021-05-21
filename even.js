@@ -64,10 +64,14 @@ function openmeeven() {
   else if (currentTime == '09:00:00AM') {
     pd2();
   }
+  else if (currentTime == '10:00:00AM') {
+    playAudio();
+  }
   else if (currentTime == '10:10:00AM') {
     dinger();
   }
   else if (currentTime == '10:15:00AM') {
+    pauseAudio();
     pd4();
   }
   else if (currentTime == '12:25:00AM') {
@@ -76,10 +80,14 @@ function openmeeven() {
   else if (currentTime == '12:30:00AM') {
     pd6();
   }
+  else if (currentTime == '10:00:00AM') {
+    playAudio();
+  }
   else if (currentTime == '01:35:00PM') {
     dinger();
   }
   else if (currentTime == '01:40:00PM') {
+    pauseAudio();
     pd8();
   }
   //}
