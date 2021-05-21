@@ -28,6 +28,9 @@ function showTime2() {
     else if (timy4 <= 1015) {
       document.getElementById('day3').innerHTML = 'Next: Pd.4';
     }
+    else if (timy4 <= 1115) {
+      document.getElementById('day3').innerHTML = 'Next: Lunch';
+    }
     else if (timy4 <= 1230) {
       document.getElementById('day3').innerHTML = 'Next: Pd.6';
     }
