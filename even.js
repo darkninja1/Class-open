@@ -11,6 +11,7 @@ function showTime2() {
     var timy2 = min2.toString();
     var timy3 = timy1 + timy2;
     var timy4 = parseInt(timy3);
+    
     if (hour > 12) { 
         hour -= 12; 
         am_pm = "PM"; 
@@ -34,10 +35,10 @@ function showTime2() {
     else if (timy4 <= 1230) {
       document.getElementById('day3').innerHTML = 'Next: Pd.6';
     }
-    else if (timy4 <= 140) {
+    else if (timy4 <= 1340) {
       document.getElementById('day3').innerHTML = 'Next: Pd.8';
     }
-    else if (timy4 <= 240) {
+    else if (timy4 <= 1440) {
       document.getElementById('day3').innerHTML = 'Next: End of School';
     }
     else{
@@ -56,6 +57,7 @@ function showTime2() {
     document.getElementById("clock") 
             .innerHTML = currentTime; 
     openmeeven();      
+    
 } 
 function openmeeven() {
   document.getElementById("day") 
