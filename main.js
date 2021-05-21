@@ -1,14 +1,12 @@
 var x = document.getElementById("music");
-
-function playAudio() {
+var x2 = document.getElementById("music2");
+function kenshin_1() {
   x.play();
 }
 
 function pauseAudio() {
   x.pause();
 }
-var x2 = document.getElementById("music2");
-
 function dinger() {
   x2.play();
 }
@@ -19,6 +17,10 @@ function setHalfVolume() {
 function setFullVolume() { 
   x.volume = 1.0;
 } 
+function superstop() {
+  x.pause();
+  x2.pause();
+}
 
 function dayw() {
   var nschool = ['1/1','12/24','12/25'];
@@ -95,6 +97,25 @@ window.onclick = function(event) {
     }
   }
 }
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction123() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn2')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 function pd1() {
   window.open("https://mcpsmd.zoom.us/j/98377294250?pwd=YUk3bjBpOGFGNzNHT1Nza0ZzQ0crZz09");
 }
@@ -128,4 +149,14 @@ function pd8() {
 }       
 function test() {
   window.open("https://leproductions.leproductions.repl.co/");
-} 
+}/*
+var k = document.getElementById("kenshin");
+function kenshin_1() {
+  k.play();
+}
+
+var k2 = document.getElementById("kenshin1");
+function kenshin_2() {
+  k2.play();
+}
+*/

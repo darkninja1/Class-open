@@ -69,7 +69,7 @@ function openmeeven() {
     pd2();
   }
   else if (currentTime == '10:00:00AM') {
-    playAudio();
+    kenshin_1();
   }
   else if (currentTime == '10:10:00AM') {
     setHalfVolume();
@@ -87,7 +87,7 @@ function openmeeven() {
     pd6();
   }
   else if (currentTime == '10:00:00AM') {
-    playAudio();
+    kenshin_1();
   }
   else if (currentTime == '01:35:00PM') {
     setHalfVolume();
