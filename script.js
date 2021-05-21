@@ -105,10 +105,16 @@ function openmeodd() {
   else if (currentTime == '09:00:00AM') {
     pd1();
   }
+  else if (currentTime == '10:00:00AM') {
+    playAudio();
+  }
   else if (currentTime == '10:10:00AM') {
+    setHalfVolume();
     dinger();
+    setFullVolume();
   }
   else if (currentTime == '10:15:00AM') {
+    pauseAudio();
     pd3();
   }
   else if (currentTime == '12:25:00AM') {
@@ -117,10 +123,16 @@ function openmeodd() {
   else if (currentTime == '12:30:00AM') {
     pd5();
   }
+  else if (currentTime == '10:00:00AM') {
+    playAudio();
+  }
   else if (currentTime == '01:35:00PM') {
+    setHalfVolume();
     dinger();
+    setFullVolume();
   }
   else if (currentTime == '01:40:00PM') {
+    pauseAudio();
     pd7();
   }
   /*

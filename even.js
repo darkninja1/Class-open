@@ -60,7 +60,6 @@ function showTime2() {
 function openmeeven() {
   document.getElementById("day") 
             .innerHTML = "Even Day";
-  //while (hi == 0) {
   if (currentTime == '08:55:00AM') {
     dinger();
   }
@@ -71,7 +70,9 @@ function openmeeven() {
     playAudio();
   }
   else if (currentTime == '10:10:00AM') {
+    setHalfVolume();
     dinger();
+    setFullVolume();
   }
   else if (currentTime == '10:15:00AM') {
     pauseAudio();
@@ -87,7 +88,9 @@ function openmeeven() {
     playAudio();
   }
   else if (currentTime == '01:35:00PM') {
+    setHalfVolume();
     dinger();
+    setFullVolume();
   }
   else if (currentTime == '01:40:00PM') {
     pauseAudio();

@@ -12,7 +12,13 @@ var x2 = document.getElementById("music2");
 function dinger() {
   x2.play();
 }
-
+function setHalfVolume() { 
+  x.volume = 0.2;
+} 
+  
+function setFullVolume() { 
+  x.volume = 1.0;
+} 
 
 function dayw() {
   var nschool = ['1/1','12/24','12/25'];
