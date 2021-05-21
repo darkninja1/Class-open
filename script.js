@@ -98,14 +98,27 @@ var hi = 0
 function openmeodd() {
   document.getElementById("day") 
             .innerHTML = "Odd Day"; 
-  if (currentTime == '09:00:00AM') {
+            //dinger()
+  if (currentTime == '08:55:00AM') {
+    dinger();
+  }
+  else if (currentTime == '09:00:00AM') {
     pd1();
+  }
+  else if (currentTime == '10:10:00AM') {
+    dinger();
   }
   else if (currentTime == '10:15:00AM') {
     pd3();
   }
+  else if (currentTime == '12:25:00AM') {
+    dinger();
+  }
   else if (currentTime == '12:30:00AM') {
     pd5();
+  }
+  else if (currentTime == '01:35:00PM') {
+    dinger();
   }
   else if (currentTime == '01:40:00PM') {
     pd7();

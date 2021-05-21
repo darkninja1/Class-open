@@ -1,3 +1,19 @@
+var x = document.getElementById("music");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
+var x2 = document.getElementById("music2");
+
+function dinger() {
+  x2.play();
+}
+
+
 function dayw() {
   var nschool = ['1/1','12/24','12/25'];
   var halfday = [];
