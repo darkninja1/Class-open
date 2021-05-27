@@ -2,6 +2,7 @@ var x = document.getElementById("music");
 var x2 = document.getElementById("music2");
 var x3 = document.getElementById("music3");
 var x4 = document.getElementById("music4");
+var x5 = document.getElementById("music5");
 function kenshin_1() {
   x.play();
 }
@@ -10,6 +11,9 @@ function slime() {
 }
 function avatar() {
   x4.play();
+}
+function kenshin2() {
+  x5.play();
 }
 
 function pauseAudio() {
@@ -30,6 +34,7 @@ function superstop() {
   x2.pause();
   x3.pause();
   x4.pause();
+  x5.pause();
 }
 
 function dayw() {
@@ -43,8 +48,8 @@ function dayw() {
   var day = d.getDate();
   var month2 = d.getMonth();
   var year = d.getFullYear();
-  var day = d.getDay();
-  var wd2 = wd[day];
+  var day2 = d.getDay();
+  var wd2 = wd[day2];
   var month = mn[month2];
   //month = month + 1;
   var date = (wd2+", "+month+" "+day+" "+year);
