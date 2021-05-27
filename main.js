@@ -29,12 +29,29 @@ function setHalfVolume() {
 function setFullVolume() { 
   x.volume = 1.0;
 } 
+function shuffle() {
+  songs = [x2,x3,x4,x5];
+  var number = Math.floor(Math.random() * 3);
+  song = songs[number];
+  song.play();
+  
+}
+function song() {
+  bob = 0;
+  while (bob == 0) {
+    shuffle();
+    song.onended = function() {
+      shuffle();
+    }
+  }
+}
 function superstop() {
   x.pause();
   x2.pause();
   x3.pause();
   x4.pause();
   x5.pause();
+  bob = bob + 1;
 }
 
 function dayw() {
