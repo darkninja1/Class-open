@@ -34,6 +34,7 @@ function shuffle() {
   var number = Math.floor(Math.random() * 3);
   song = songs[number];
   length = (song.duration)*100;
+  document.getElementById('day4').innerHTML = length;
   song.play();
   
 }
