@@ -33,16 +33,14 @@ function shuffle() {
   songs = [x2,x3,x4,x5];
   var number = Math.floor(Math.random() * 3);
   song = songs[number];
+  length = (song.duration)*100;
   song.play();
   
 }
 function song() {
-  bob = 0;
-  while (bob == 0) {
-    shuffle();
-    song.onended = function() {
-      shuffle();
-    }
+  var billy123 = setInterval(shuffle, length);
+  song.onended = function() {
+    clearInterval(billy123);
   }
 }
 function superstop() {
