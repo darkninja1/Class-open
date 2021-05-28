@@ -96,6 +96,9 @@ body {
   border:1px solid rgb(153, 0, 255);
   cursor:pointer;
 }
+#day:hover,#day2:hover,#day3:hover,#day4:hover {
+  border:1px solid green;
+}
 @media screen and (max-width: 1200px) {
   #clock {
     font-size: 75px; 
