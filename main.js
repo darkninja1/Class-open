@@ -22,7 +22,7 @@ function shuffle() {
   var number = Math.floor(Math.random() * songs.length);
   if (pre.length == songs.length) {
     pre = [];
-    start();
+    shuffle();
   }
   else if (pre.includes(songn[number])) {
     shuffle();
@@ -45,6 +45,7 @@ function shuffle() {
 }
 function superstop() {
   var x = document.getElementById("music");
+  document.getElementById('day2').innerHTML = "Music";
   x.pause();
 }
 function vol() {
