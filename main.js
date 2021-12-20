@@ -18,14 +18,15 @@ function setFullVolume() {
   x.volume = 1.0;
 } 
 function shuffle() {
-  var songs = ['music/Letter From Ajax.mp3','music/RISING SOUL - Tempei Nakamura (Official Music Video).mp3'];
-  var songn = ['Letter From Ajax','RISING SOUL - Tempei Nakamura'];
+  var songs = ['music/Letter From Ajax.mp3','music/RISING SOUL - Tempei Nakamura (Official Music Video).mp3','JJ Lin – Lose Control _ Shang-Chi - The Album.mp3'];
+  var songn = ['Letter From Ajax','RISING SOUL - Tempei Nakamura','JJ Lin – Lose Control'];
   var pics = [''];
-  document.getElementById('myDropdown2').innerHTML = "Playing: "+songn;
+  
   var number = Math.floor(Math.random() * songs.length);
   song = songs[number];
-  length = song.getMilliseconds();
-  document.getElementById('day4').innerHTML = length;
+  //length = song.getMilliseconds();
+  //document.getElementById('day4').innerHTML = length;
+  document.getElementById('day3').innerHTML = "Playing: "+songn[number];
   document.getElementById('musicid').src = song;
   x.load();
   x.play();
@@ -88,7 +89,7 @@ function dayw() {
   var month = mn[month2];
   //month = month + 1;
   var date = (wd2+", "+month+" "+day+" "+year);
-  document.getElementById("day2").innerHTML = date; 
+  document.getElementById("day3").innerHTML = date; 
   var date2 = (month+"/"+day);
   if (date2 in nschool) {
     alert("no school today");
