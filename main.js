@@ -19,16 +19,17 @@ function setFullVolume() {
 } 
 function shuffle() {
   var x = document.getElementById("music");
-  if (pre.length == music.length) {
+  var number = Math.floor(Math.random() * songs.length);
+  if (pre.length == songs.length) {
     pre = [];
     start();
   }
-  else if (pre.includes(musicname[cmusic])) {
+  else if (pre.includes(songn[number])) {
     shuffle();
   }
   
   else{
-    var number = Math.floor(Math.random() * songs.length);
+    
     song = songs[number];
     //length = song.getMilliseconds();
     //document.getElementById('day4').innerHTML = length;
