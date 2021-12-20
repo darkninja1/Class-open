@@ -26,7 +26,7 @@ function shuffle() {
   song = songs[number];
   //length = song.getMilliseconds();
   //document.getElementById('day4').innerHTML = length;
-  document.getElementById('day3').innerHTML = "Playing: "+songn[number];
+  document.getElementById('day2').innerHTML = "Playing: "+songn[number];
   document.getElementById('musicid').src = song;
   x.load();
   x.play();
