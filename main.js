@@ -1,6 +1,6 @@
 var x = document.getElementById("music");
 var pre = [];
-var songs = ['music/Letter From Ajax.mp3','music/RISING SOUL - Tempei Nakamura (Official Music Video).mp3','music/JJ Lin – Lose Control _ Shang-Chi - The Album.mp3'];
+var songs = ['music/LFA.mp3','music/RISING.mp3','music/JJ.mp3'];
 var songn = ['Letter From Ajax','RISING SOUL - Tempei Nakamura','JJ Lin – Lose Control'];
 var pics = [''];
 
