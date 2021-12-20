@@ -30,7 +30,7 @@ function shuffle() {
   
   else{
     
-    song = songs[number];
+    var song = songs[number];
     //length = song.getMilliseconds();
     //document.getElementById('day4').innerHTML = length;
     document.getElementById('day2').innerHTML = "Playing: "+songn[number];
