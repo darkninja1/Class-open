@@ -30,6 +30,9 @@ function shuffle() {
   document.getElementById('musicid').src = song;
   x.load();
   x.play();
+  document.getElementById("music").onended = function() {
+    shuffle();
+  };
 }
 function song() {
   var billy123 = setInterval(shuffle, length);
