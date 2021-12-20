@@ -6,9 +6,7 @@ function pauseAudio() {
   x.pause();
 }
 function dinger() {
-  document.getElementById('musicid').src = "music/ding.mp3";
-  x.load();
-  x.play();
+  document.getElementById('dinger').play();
 }
 function setHalfVolume() { 
   x.volume = 0.2;
@@ -18,6 +16,7 @@ function setFullVolume() {
   x.volume = 1.0;
 } 
 function shuffle() {
+  var x = document.getElementById("music");
   var songs = ['music/Letter From Ajax.mp3','music/RISING SOUL - Tempei Nakamura (Official Music Video).mp3','JJ Lin – Lose Control _ Shang-Chi - The Album.mp3'];
   var songn = ['Letter From Ajax','RISING SOUL - Tempei Nakamura','JJ Lin – Lose Control'];
   var pics = [''];
@@ -35,6 +34,7 @@ function shuffle() {
   };
 }
 function superstop() {
+  var x = document.getElementById("music");
   x.pause();
 }
 function vol() {
