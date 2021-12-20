@@ -34,12 +34,6 @@ function shuffle() {
     shuffle();
   };
 }
-function song() {
-  var billy123 = setInterval(shuffle, length);
-  song.onended = function() {
-    clearInterval(billy123);
-  }
-}
 function superstop() {
   x.pause();
 }
