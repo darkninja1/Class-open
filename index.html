@@ -29,12 +29,8 @@
     <div class="dropdown2">
     <button onclick="myFunction1234()" class="dropbtn2" id="day2">---</button>
     <div id="myDropdown2" class="dropdown-content2">
-    <a onclick="kenshin_1()">Kenshin (jp)</a>
-    <a onclick="slime()">Slime (jp)</a>
-    <a onclick="avatar()">Kings Avatar (ch)</a>
-    <a onclick="kenshin2()">Kenshin Ending 3 (jp)</a>
     <a onclick="song()">Shuffle</a>
-    <a onclick="superstop()">Stop Playing</a>
+    <a onclick="superstop()">Stop</a>
     </div>
     </div>
 
@@ -44,21 +40,17 @@
     <!--
     <button class='red' type="button" onclick="setInterval(showTime, 1000);">Odd Day</button>
     <button class='blue' type="button" onclick="setInterval(showTime2, 1000);">Even Day</button>-->
-    <audio  id='music' style="display:none;" loop>
-      <source src='music/Kenshin.mp3' type='audio/mpeg'>
-    </audio>
-    <audio  id='music2' style="display:none;">
-      <source src='music/ding.mp3' type='audio/mpeg'>
-    </audio>
-    <audio  id='music3' style="display:none;">
-      <source src='music/slime100.mp3' type='audio/mpeg'>
-    </audio>
-    <audio  id='music4' style="display:none;">
-      <source src="music/king.mp3" type='audio/mpeg'>
-    </audio>
-    <audio  id='music5' style="display:none;">
-      <source src="music/samurai.mp3" type='audio/mpeg'>
-    </audio>
+    <span id='time1'></span>
+<span id='time2'></span>
+    <div class='barh'>
+  <div id='bar'></div>
+  </div>
+    <label for='slide' id='vol'>🔊</label>
+    <input type="range" min="0" max="100" value="100" id="slide" onchange='vol()'>
+    <audio class='audio' id='music' style="display:none;" ontimeupdate="up();">
+        <source id='musicid' src='' type='audio/mpeg'>
+</audio>
+    
     <script src="script.js"></script>
     <script src="even.js"></script>
     <script src="main.js"></script>

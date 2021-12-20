@@ -1,26 +1,14 @@
 var x = document.getElementById("music");
-var x2 = document.getElementById("music2");
-var x3 = document.getElementById("music3");
-var x4 = document.getElementById("music4");
-var x5 = document.getElementById("music5");
-function kenshin_1() {
-  x.play();
-}
-function slime() {
-  x3.play();
-}
-function avatar() {
-  x4.play();
-}
-function kenshin2() {
-  x5.play();
-}
+
+
 
 function pauseAudio() {
   x.pause();
 }
 function dinger() {
-  x2.play();
+  document.getElementById('musicid').src = "music/ding.mp3";
+  x.load();
+  x.play();
 }
 function setHalfVolume() { 
   x.volume = 0.2;
@@ -30,13 +18,17 @@ function setFullVolume() {
   x.volume = 1.0;
 } 
 function shuffle() {
-  songs = [x2,x3,x4,x5];
-  var number = Math.floor(Math.random() * 3);
+  var songs = ['music/Letter From Ajax.mp3','music/RISING SOUL - Tempei Nakamura (Official Music Video).mp3'];
+  var songn = ['Letter From Ajax','RISING SOUL - Tempei Nakamura'];
+  var pics = [''];
+  document.getElementById('myDropdown2').innerHTML = "Playing: "+songn;
+  var number = Math.floor(Math.random() * songs.length);
   song = songs[number];
   length = song.getMilliseconds();
   document.getElementById('day4').innerHTML = length;
-  song.play();
-  
+  document.getElementById('musicid').src = song;
+  x.load();
+  x.play();
 }
 function song() {
   var billy123 = setInterval(shuffle, length);
@@ -46,13 +38,40 @@ function song() {
 }
 function superstop() {
   x.pause();
-  x2.pause();
-  x3.pause();
-  x4.pause();
-  x5.pause();
-  bob = bob + 1;
 }
+function vol() {
+  var iv = document.getElementById("slide").value;
+  if (iv >= 75) {
+    document.getElementById('vol').innerHTML = "🔊";
+  }
+  else if (iv >= 30) {
+    document.getElementById('vol').innerHTML = "🔉";
+  }
+  else {
+    document.getElementById('vol').innerHTML = "🔈";
+  }
 
+  document.getElementById("music").volume = (iv/100);
+}
+function up() {
+  var cc = document.getElementById('music').currentTime;
+  var dd = document.getElementById('music').duration;
+  var cc1 = parseInt(cc%60);
+  var dd1 = parseInt(dd%60);
+  if (cc1 <= 9) {
+    document.getElementById('time1').innerHTML = (parseInt(cc/60)+':0'+cc1);
+  }
+  else {
+    document.getElementById('time1').innerHTML = (parseInt(cc/60)+':'+cc1);
+  }
+  if (dd1 <= 9) {
+    document.getElementById('time2').innerHTML = (parseInt(dd/60)+':0'+dd1);
+  }
+  else {
+    document.getElementById('time2').innerHTML = (parseInt(dd/60)+':'+dd1);
+  }
+  document.getElementById('bar').style.width = ((cc / dd)*100) +'%';
+}
 function dayw() {
   var nschool = ['1/1','12/24','12/25'];
   var halfday = [];
