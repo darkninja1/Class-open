@@ -17,7 +17,7 @@ function setFullVolume() {
 } 
 function shuffle() {
   var x = document.getElementById("music");
-  var songs = ['music/Letter From Ajax.mp3','music/RISING SOUL - Tempei Nakamura (Official Music Video).mp3','JJ Lin – Lose Control _ Shang-Chi - The Album.mp3'];
+  var songs = ['/music/Letter From Ajax.mp3','/music/RISING SOUL - Tempei Nakamura (Official Music Video).mp3','JJ Lin – Lose Control _ Shang-Chi - The Album.mp3'];
   var songn = ['Letter From Ajax','RISING SOUL - Tempei Nakamura','JJ Lin – Lose Control'];
   var pics = [''];
   
