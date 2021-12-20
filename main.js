@@ -1,6 +1,8 @@
 var x = document.getElementById("music");
-
-
+var pre = [];
+var songs = ['/music/Letter From Ajax.mp3','/music/RISING SOUL - Tempei Nakamura (Official Music Video).mp3','/music/JJ Lin – Lose Control _ Shang-Chi - The Album.mp3'];
+var songn = ['Letter From Ajax','RISING SOUL - Tempei Nakamura','JJ Lin – Lose Control'];
+var pics = [''];
 
 function pauseAudio() {
   x.pause();
@@ -17,21 +19,28 @@ function setFullVolume() {
 } 
 function shuffle() {
   var x = document.getElementById("music");
-  var songs = ['/music/Letter From Ajax.mp3','/music/RISING SOUL - Tempei Nakamura (Official Music Video).mp3','/music/JJ Lin – Lose Control _ Shang-Chi - The Album.mp3'];
-  var songn = ['Letter From Ajax','RISING SOUL - Tempei Nakamura','JJ Lin – Lose Control'];
-  var pics = [''];
-  
-  var number = Math.floor(Math.random() * songs.length);
-  song = songs[number];
-  //length = song.getMilliseconds();
-  //document.getElementById('day4').innerHTML = length;
-  document.getElementById('day2').innerHTML = "Playing: "+songn[number];
-  document.getElementById('musicid').src = song;
-  x.load();
-  x.play();
-  document.getElementById("music").onended = function() {
+  if (pre.length == music.length) {
+    pre = [];
+    start();
+  }
+  else if (pre.includes(musicname[cmusic])) {
     shuffle();
-  };
+  }
+  
+  else{
+    var number = Math.floor(Math.random() * songs.length);
+    song = songs[number];
+    //length = song.getMilliseconds();
+    //document.getElementById('day4').innerHTML = length;
+    document.getElementById('day2').innerHTML = "Playing: "+songn[number];
+    pre.push(songn[number]);
+    document.getElementById('musicid').src = song;
+    x.load();
+    x.play();
+    document.getElementById("music").onended = function() {
+      shuffle();
+    };
+  }
 }
 function superstop() {
   var x = document.getElementById("music");
