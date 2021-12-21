@@ -38,7 +38,7 @@ function shuffle() {
     var song = songs[number];
     //length = song.getMilliseconds();
     //document.getElementById('day4').innerHTML = length;
-    document.getElementById('day2').backgroundImage = "url('"+pics[number]+"')";
+    document.getElementById('day2').style.backgroundImage = "url('"+pics[number]+"')";
     document.getElementById('day2').innerHTML = "Playing: "+songn[number];
     pre.push(songn[number]);
     document.getElementById('musicid').src = song;
