@@ -2,8 +2,11 @@ var x = document.getElementById("music");
 var pre = [];
 var songs = ['music/LFA.mp3','music/RISING.mp3','music/JJ.mp3'];
 var songn = ['Letter From Ajax','RISING SOUL - Tempei Nakamura','JJ Lin – Lose Control'];
-var pics = [''];
-
+var pics = ['pics/vermont1.jpg','pics/vermont1.jpg','pics/ring.jpg'];
+/*
+function alert1(mes) {
+document.getElementById('message2').innerHTML = mes; $('#message2').fadeIn('slow', function(){$('#message2').delay(3000).fadeOut();});
+}*/
 function pauseAudio() {
   x.pause();
 }
@@ -35,6 +38,7 @@ function shuffle() {
     var song = songs[number];
     //length = song.getMilliseconds();
     //document.getElementById('day4').innerHTML = length;
+    document.getElementById('day2').backgroundImage = "url('"+pics[number]+"')";
     document.getElementById('day2').innerHTML = "Playing: "+songn[number];
     pre.push(songn[number]);
     document.getElementById('musicid').src = song;
