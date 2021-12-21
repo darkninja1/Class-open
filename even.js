@@ -1,3 +1,12 @@
+var pd1_2 = 745; // pd 1 and 2 times
+var pd3_4 = 930; // pd 3 and 4 times
+var pd5_6 = 1206; // pd 5 and 6 times
+var pd7_8 = 1256; // pd 7 and 8 times
+var rm1 = 1; // warning time
+var rm2 = 6; // time between classes
+
+
+
 function showTime2() { 
     let time2 = new Date(); 
     let hour2 = time2.getHours(); 
@@ -62,42 +71,50 @@ function showTime2() {
 function openmeeven() {
   document.getElementById("day") 
             .innerHTML = "Even Day";
-  if (currentTime == '08:55:00AM') {
+  if (currentTime == pd1_2 - rm1) {
+    //5 min before
     dinger();
   }
-  else if (currentTime == '09:00:00AM') {
+  else if (currentTime == pd1_2) {
+    //pd 2
     pd2();
   }
-  else if (currentTime == '10:00:00AM') {
-    superstop()
-    //music here
+  else if (currentTime == pd3_4 - rm2) {
+    //end of pd 2
+    shuffle();
   }
-  else if (currentTime == '10:10:00AM') {
+  else if (currentTime == pd3_4 - rm1) {
+    //5 min before pd 4
     setHalfVolume();
     dinger();
     setFullVolume();
   }
-  else if (currentTime == '10:15:00AM') {
-    pauseAudio();
+  else if (currentTime == pd3_4) {
+    //pd 4
+    superstop();
     pd4();
   }
-  else if (currentTime == '12:25:00AM') {
+    //lunch
+  else if (currentTime == pd5_6 - rm1) {
+    // 5 min before pd 6
     dinger();
   }
-  else if (currentTime == '12:30:00AM') {
+  else if (currentTime == pd5_6) {
     pd6();
   }
-  else if (currentTime == '10:00:00AM') {
-    superstop()
-    //music here
+  else if (currentTime == pd7_8 - rm2) {
+    //end of pd 6
+    shuffle();
   }
-  else if (currentTime == '01:35:00PM') {
+  else if (currentTime == pd7_8 - rm1) {
+    //5 min before pd 8
     setHalfVolume();
     dinger();
     setFullVolume();
   }
-  else if (currentTime == '01:40:00PM') {
-    pauseAudio();
+  else if (currentTime == pd7_8) {
+    //pd 8
+    superstop();
     pd8();
   }
   //}
