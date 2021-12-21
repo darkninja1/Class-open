@@ -2,7 +2,7 @@ var x = document.getElementById("music");
 var pre = [];
 var songs = ['music/LFA.mp3','music/RISING.mp3','music/JJ.mp3'];
 var songn = ['Letter From Ajax','RISING SOUL - Tempei Nakamura','JJ Lin – Lose Control'];
-var pics = ['pics/vermont1.jpg','pics/vermont1.jpg','pics/ring.jpg'];
+var pics = ['pics/vermont1.jpg','pics/rain.jpg','pics/ring.jpg'];
 /*
 function alert1(mes) {
 document.getElementById('message2').innerHTML = mes; $('#message2').fadeIn('slow', function(){$('#message2').delay(3000).fadeOut();});
