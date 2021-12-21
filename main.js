@@ -11,10 +11,12 @@ function dinger() {
   document.getElementById('dinger').play();
 }
 function setHalfVolume() { 
+  var x = document.getElementById("music");
   x.volume = 0.2;
 } 
   
 function setFullVolume() { 
+  var x = document.getElementById("music");
   x.volume = 1.0;
 } 
 function shuffle() {
