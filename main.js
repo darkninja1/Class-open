@@ -97,7 +97,7 @@ function dayw() {
   var month = mn[month2];
   //month = month + 1;
   var date = (wd2+", "+month+" "+day+" "+year);
-  document.getElementById("day3").innerHTML = date; 
+  document.getElementById("day4").innerHTML = date; 
   var date2 = (month+"/"+day);
   if (date2 in nschool) {
     alert("no school today");
